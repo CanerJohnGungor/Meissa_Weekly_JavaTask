@@ -7,6 +7,8 @@ public class Teuta {
         System.out.println("Hello");
         System.out.println("Hello again");
 
+        System.out.println("Day 2");
+
 
 
 
