@@ -7,5 +7,6 @@ public class Ihsan {
 
         System.out.println("Hello World");
         System.out.println("Have a good week!!");
+        System.out.println("Hi fram day2");
     }
 }
