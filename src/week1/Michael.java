@@ -46,6 +46,9 @@ public class Michael {
                 result += i+" ";
         }
         System.out.println(result);
+
+
+
     }
 
 
