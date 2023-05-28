@@ -5,5 +5,6 @@ public class Lussa_Day_2 {
 
         System.out.println("Hi class");
         System.out.println("GM. Have a good day");
+
     }
 }
