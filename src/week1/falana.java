@@ -7,6 +7,7 @@ public class falana {
         System.out.println("Hello again");
         System.out.println("Good morning");
         System.out.println("New day");
+        System.out.println("Today is Sunday");
 
 
     }
