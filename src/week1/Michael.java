@@ -31,6 +31,7 @@ public class Michael {
             count++;
         }
         System.out.println(count+" and remainder is "+num1);
+
     }
 
     public static void FINRA() {
