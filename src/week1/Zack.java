@@ -21,18 +21,17 @@ public class Zack  {
 
 
 
-    public static int divideNumber(int number,int number2) {
-        int thirdNumber = 0;
+    public static String divideNumber(int number,int number2) {
+        int count= 0;
 
         if(number2==0){
-            System.err.println(number2+" can not be 0");
-            System.exit(1);
+            System.out.println(number2 + " can not be 0");
         }
         while (number >= number2) {
             number -= number2;
-            thirdNumber++;
+            count++;
         }
-        return thirdNumber;
+        return ""+count;
     }
 
     public static void finRa() {
