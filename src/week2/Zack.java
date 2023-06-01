@@ -33,9 +33,9 @@ public class Zack {
 
     public static void printNumbers(int a) {
         for (int i = 1; i <= a; i++) {
-            String result = i+ "";
-            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
-                result += "CodilityTestCoders";
+            String result = i + "";
+            if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0) {
+                result = "";
             }
             if (i % 2 == 0) {
                 result += "Codility";
@@ -43,13 +43,8 @@ public class Zack {
             if (i % 3 == 0) {
                 result += "Test";
             }
-
             if (i % 5 == 0) {
                 result += "Coders";
-            }
-
-            if(i%2 ==0 && i%3==0){
-                result+=" Codility Test";
             }
 
             System.out.println(result);
@@ -59,12 +54,11 @@ public class Zack {
     public static void main(String[] args) {
 
 
-        swap(12, 3);
+        swap(21, 4);
 
         divisibleBy();
 
         printNumbers(30);
-
 
     }
 }
