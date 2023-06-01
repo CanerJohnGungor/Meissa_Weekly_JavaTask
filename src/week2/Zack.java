@@ -1,6 +1,6 @@
 package week2;
 
-public class Jim {
+public class Zack {
 
     public static void swap(int a, int b) {
         System.out.println(a + " | " + b);
@@ -43,10 +43,10 @@ public class Jim {
             if (i % 3 == 0) {
                 result += "Test";
             }
-
             if (i % 5 == 0) {
                 result += "Coders";
             }
+
             System.out.println(result);
         }
     }
@@ -54,12 +54,11 @@ public class Jim {
     public static void main(String[] args) {
 
 
-        swap(12, 3);
+        swap(21, 4);
 
         divisibleBy();
 
-        printNumbers(24);
-
+        printNumbers(30);
 
     }
 }

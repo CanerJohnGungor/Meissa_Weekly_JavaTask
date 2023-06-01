@@ -1,7 +1,6 @@
 package week2;
 
-public class Jim {
-
+public class Ivan {
     public static void swap(int a, int b) {
         System.out.println(a + " | " + b);
         a = a + b;
@@ -14,6 +13,7 @@ public class Jim {
         String divisibleBy15 = "Divisible by 15: ";
         String divisibleBy3 = "Divisible by 3: ";
         String divisibleBy5 = "Divisible by 5: ";
+        String notDivisibleBy3_5_15= "Not Divisible 3_5_15: ";
         for (int i = 1; i < 101; i++) {
             if (i % 15 == 0) {
                 divisibleBy15 += i + " ";
@@ -23,12 +23,15 @@ public class Jim {
 
             } else if (i % 5 == 0) {
                 divisibleBy5 += i + " ";
+            }else{
+                notDivisibleBy3_5_15 += i+" ";
             }
 
         }
         System.out.println(divisibleBy15);
         System.out.println(divisibleBy5);
         System.out.println(divisibleBy3);
+        System.out.println(notDivisibleBy3_5_15);
     }
 
     public static void printNumbers(int a) {

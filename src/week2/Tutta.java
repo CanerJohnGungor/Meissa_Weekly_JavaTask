@@ -1,6 +1,8 @@
 package week2;
 
-public class Jim {
+public class Tutta {
+
+
 
     public static void swap(int a, int b) {
         System.out.println(a + " | " + b);
@@ -63,3 +65,4 @@ public class Jim {
 
     }
 }
+
