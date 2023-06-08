@@ -58,7 +58,7 @@ public class Zack {
 
         divisibleBy();
 
-        printNumbers(30);
+        printNumbers(24);
 
     }
 }
