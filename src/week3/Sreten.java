@@ -26,6 +26,7 @@ public class Sreten {
         return reverse *(-1);
     }
 
+
     public static void main(String[] args) {
 
         System.out.println("isPrime " + prime(27));
