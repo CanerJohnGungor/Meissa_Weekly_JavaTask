@@ -5,6 +5,8 @@ public class Michael {
 swapingNumbers(5,10);
 divisibleBy();
 codilityTestCoders(100);
+int reverseNum =reverseNum(-56);
+        System.out.println("reverseNum = " + reverseNum);
 
     }
 
@@ -65,6 +67,14 @@ codilityTestCoders(100);
         }
 
         System.out.println(result);
+    }
+
+    public static int reverseNum(int  num) {
+        String str = new StringBuilder(""+num).reverse().toString();
+        if(num < 0) {
+            str = "-"+str.substring(0, str.length()-1);
+        }
+        return Integer.valueOf(str);
     }
 
 }
