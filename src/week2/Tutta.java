@@ -1,6 +1,8 @@
 package week2;
 
-public class Zack {
+public class Tutta {
+
+
 
     public static void swap(int a, int b) {
         System.out.println(a + " | " + b);
@@ -43,10 +45,10 @@ public class Zack {
             if (i % 3 == 0) {
                 result += "Test";
             }
+
             if (i % 5 == 0) {
                 result += "Coders";
             }
-
             System.out.println(result);
         }
     }
@@ -54,11 +56,13 @@ public class Zack {
     public static void main(String[] args) {
 
 
-        swap(21, 4);
+        swap(12, 3);
 
         divisibleBy();
 
         printNumbers(24);
 
+
     }
 }
+
