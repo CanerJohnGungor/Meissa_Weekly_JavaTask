@@ -9,6 +9,9 @@ public class Lussa {
         System.out.println("Gm, everyone");
         System.out.println("Gm");
         System.out.println("GM");
+        System.out.println("GM");
+        System.out.println("Gm");
+        System.out.println("GM");
 
     }
 }
