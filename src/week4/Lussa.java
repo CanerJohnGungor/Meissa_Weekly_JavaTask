@@ -25,7 +25,7 @@ public class Lussa {
         String st1 = new String("INDIA IS MY COUNTRY");                          // input string in uppercase
 
 
-        String st2 = new String("india is my country");                          // input string in lowercase
+        String st2 = new String("INDIA IS MY COUNTRY");                          // input string in lowercase
 
             System.out.println(st1.compareTo(st2));
         }
