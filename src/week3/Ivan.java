@@ -25,10 +25,27 @@ public class Ivan {
         return reverse;
     }
 
+    public static int reverseNegative1(int negative) {
+        String reversed = "";
+
+        if (negative < 0) {
+            String num = String.valueOf(negative * -1);
+
+            for (int i = num.length() - 1; i >= 0; i--) {
+                reversed += num.charAt(i) + "";
+            }
+        } else {
+            System.err.println("Only negative numbers");
+
+        }
+        return Integer.parseInt(reversed) * -1;
+
+    }
+
     public static void main(String[] args) {
 
         System.out.println("isPrime " + isPrime(29));
-        System.out.println(reverseNegative(-4523));
+        System.out.println(reverseNegative1(-9867));
 
     }
 }
