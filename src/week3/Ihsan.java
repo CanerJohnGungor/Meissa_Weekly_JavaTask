@@ -25,19 +25,19 @@ public class Ihsan {
     public static void reverseNegative (int num) {
 
 
-        int reverse =0;
+        int reverse =0; // -9
 
-        while (!(num == 0)){
-            int digit = num % 10;
-            reverse= reverse*10 + digit;
-            num /=10;
+        while (!(num == 0)){ //  -5689
+            int digit = num % 10; // -9
+            reverse= reverse*10 + digit; //(0*10+(-9) == -9
+            num /=10; // -568
 
         }
         System.out.println(reverse);
     }
     public static void main(String[] args) {
-        primeNumber(100);
-        reverseNegative(-98756);
+        primeNumber(29);
+        reverseNegative(268);
     }
 
 
