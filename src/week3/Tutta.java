@@ -31,6 +31,7 @@ public class Tutta {
         System.out.println("isPrime " + isPrime(29));
         System.out.println(reverseNegative(-4523));
 
+
     }
 
 }
