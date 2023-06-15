@@ -12,6 +12,7 @@ public class Lussa {
         System.out.println("GM");
         System.out.println("Gm");
         System.out.println("GM");
+        System.out.println("Gm");
 
     }
 }
