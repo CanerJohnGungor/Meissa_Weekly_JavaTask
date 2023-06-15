@@ -48,24 +48,24 @@ public class Canan {
         System.out.println(isSameLetters);
     }
 
-        public static void RemoveDup (String word){
+    public static void RemoveDup (String word){
 
-            String result = "";
+        String result = "";
 
-            for (int i = 0; i < word.length(); i++) {
-                int count = 0;
-                for (char each : word.toCharArray()) {
-                    if (!(each == word.charAt(i))) {
-                        if (!(result.contains(each + ""))) {
-                            result += "" + each;
-                        }
+        for (int i = 0; i < word.length(); i++) {
+            int count = 0;
+            for (char each : word.toCharArray()) {
+                if (!(each == word.charAt(i))) {
+                    if (!(result.contains(each + ""))) {
+                        result += "" + each;
                     }
                 }
             }
-            System.out.println(result);
         }
-
+        System.out.println(result);
     }
+
+}
 
 /* THIS  METHOD ONLY WORKS IF WE TRY STRING WITH NON REPEATED LETTERS LIKE: "ERT-TRE"
 
