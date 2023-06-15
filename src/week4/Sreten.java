@@ -40,6 +40,3 @@ Ex: same("abc", "cab"); -> true same("abc", "abb"); -> false:
     }
 }
 
-
-
-}
