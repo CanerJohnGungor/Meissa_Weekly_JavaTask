@@ -8,7 +8,8 @@ import java.util.Arrays;
 public class Canan {
 
     public static void main(String[] args) {
-        FrequencyOfCharacters("ADAaAAAAGRH");
+        FrequencyOfCharacters("AABaAAGRH");
+        FrequencyOfCharactersWithBug("AABaAAGRH");
         SameLetters("erre", "rere");
         RemoveDup("eewwFFGGg");
 
@@ -16,25 +17,48 @@ public class Canan {
 
     public static void FrequencyOfCharacters(String word) {
 
-        String result = "";//EERRFF
+        String result = ""; //AABaAAGRH
+
+        for (int i = 0; i < word.length(); i++) {
+            int count = 0;
+
+            if (!(result.contains("" + word.charAt(i)))) {
+
+                for (char each : word.toCharArray()) {
+                    if (each == word.charAt(i)) {
+                        count++;
+                    }
+                }
+                result += word.charAt(i) + "" + count+" ";
+            }
+
+        }
+        System.out.println(result);
+    }
+
+
+    public static void FrequencyOfCharactersWithBug(String word) {
+
+        String result = ""; //AABaAAGRH
 
         for (int i = 0; i < word.length(); i++) {
             int count = 0;
 
             if (result.contains("" + word.charAt(i))) {
-                i++;
+                i++;// BECAUSE OF THIS; WHEN THE CONDITION IS TRUE, IT INCREASES i and skip next char.
             } else {
                 for (char each : word.toCharArray()) {
                     if (each == word.charAt(i)) {
                         count++;
                     }
                 }
-                result += word.charAt(i) + "" + count;
+                result += word.charAt(i) + "" + count+" ";
             }
 
         }
         System.out.println(result);
     }
+
 
 
     public static void SameLetters(String word1, String word2) {
