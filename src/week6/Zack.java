@@ -57,6 +57,6 @@ public class Zack {
 
         System.out.println(validPassword("Password1!"));
         System.out.println(arrayMaxNumber(new int[]{10, 20, 30, 40, 50}));
-        System.out.println(calculateDigitSum("Holea123456jjasd"));
+        System.out.println(calculateDigitSum("Holea123456jjaskd"));
     }
 }
