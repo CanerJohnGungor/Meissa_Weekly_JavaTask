@@ -1,10 +1,12 @@
 package week7;
 
+import java.util.Arrays;
+
 public class Ivan {
-    public static int minNum(int[] arr){
+    public static int minNum(int[] arr) {
         int minNum = arr[0];
         for (int each : arr) {
-            if (each<minNum){
+            if (each < minNum) {
                 minNum = each;
             }
         }
@@ -12,23 +14,47 @@ public class Ivan {
 
     }
 
-    public static int[] ascendingOrder(int[] arr){
-        int minNum = arr[0];
-        int[] ascending = new int[arr.length];
-        for (int each : arr) {
-            if (each<minNum){
-                minNum = each;
+    public static int[] ascendingOrder(int[] arr) {
+
+        for (int i = 0; i < arr.length; i++) {
+
+            for (int j = 0; j < arr.length-1; j++) {
+                if (arr[j]>arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+
             }
+
         }
-        return ascending;
+        return arr;
     }
+
+    public static int[] descendingOrder(int[] arr) {
+
+        for (int i = 0; i < arr.length; i++) {
+
+            for (int j = 0; j < arr.length-1; j++) {
+                if (arr[j]<arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+
+            }
+
+        }
+        return arr;
+    }
+
 
     public static void main(String[] args) {
 
-        int[] arr = {-10, 3, 5, 7, -3, 10};
+        int[] arr = {10, 3, 5, 7, -3, -10};
         System.out.println(minNum(arr));
-
-
+        System.out.println("ascendingOrder(arr) = " + Arrays.toString(ascendingOrder(arr)));
+        System.out.println("Arrays.toString(descendingOrder(arr)) = " + Arrays.toString(descendingOrder(arr)));
     }
 }
 /*
