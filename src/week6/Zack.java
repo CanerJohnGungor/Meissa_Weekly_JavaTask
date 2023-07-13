@@ -5,6 +5,7 @@ public class Zack {
     public static boolean validPassword(String password){
 
         if(password.length() <6 || password.contains(" ")){
+            System.err.println("Invalid password conditions, it needs to be bigger than 6 character and it can not contain space");
             return false;
         }
         // first assign negative value to boolean
