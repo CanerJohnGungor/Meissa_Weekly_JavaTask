@@ -50,6 +50,7 @@ public class Zack {
 
         System.out.println(Arrays.toString(mestOldum));
 
+
     }
 
 }

@@ -31,6 +31,7 @@ public class Zack {
 
 
 
+
     public static void main(String[] args) {
 
         System.out.println(arrayMinNumber(new int[]{2, 3, 4, 5, 1}));
